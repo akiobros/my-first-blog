@@ -5,13 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
-            "request": "launch",
-            "name": "Electron Main",
-            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
-            "program": "${workspaceFolder}/main.js"
-        },
-        {
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
@@ -23,15 +16,11 @@
             "django": true
         },
         {
-            "name": "Python: Django",
+            "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}\\manage.py",
-            "args": [
-                "runserver",
-                "--noreload"
-            ],
-            "django": true
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
